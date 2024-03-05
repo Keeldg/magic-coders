@@ -2,6 +2,7 @@
 .footer {
   background-color: #7a3145;
   padding: 40px 0;
+  max-width: 100%;
 }
 
 .footer-container {
@@ -74,7 +75,7 @@
 }
 
 .footer-nav-link:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .footer-adress {
@@ -104,7 +105,16 @@
 }
 
 .footer-tel:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.footer-map {
+  display: block;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-map:hover {
+  transform: scale(1.05);
 }
 
 .footer-privacy {
