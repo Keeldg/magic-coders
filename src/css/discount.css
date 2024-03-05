@@ -1,3 +1,118 @@
-.discount {
-  background-color: aqua;
+/* @import 'animate.css'; */
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.animate__pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.discount-section {
+  padding: 80px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.discount-section .container {
+  padding: 0 10px;
+}
+.discount-up-to {
+  border-radius: 12px;
+  background: #576f35;
+  max-width: 355px;
+  color: #fbfbfb;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.04; /* 104.167% */
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 3px 10px 0 10px;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  position: relative;
+  z-index: -999;
+}
+.taste-vitamins {
+  color: #141414;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  max-width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .discount-section {
+    padding: 100px 0;
+  }
+  .discount-section .container {
+    padding: 0 16px;
+  }
+  .discount-up-to {
+    max-width: 704px;
+    font-size: 64px;
+    line-height: 1.09; /* 109.375% */
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+  .taste-vitamins {
+    font-size: 64px;
+    line-height: 1.09;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .discount-section .container {
+    padding: 0 100px;
+  }
+  .discount-up-to {
+    display: inline-flex;
+    font-size: 76px;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    max-width: 1054px;
+  }
+  .taste-vitamins {
+    display: inline;
+    font-size: 76px;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    max-width: 1054px;
+  }
+}
+
+.animate_animated {
+  position: relative;
+  z-index: -1;
 }
